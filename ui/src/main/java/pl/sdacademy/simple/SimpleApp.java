@@ -8,7 +8,9 @@ import java.util.Scanner;
 import pl.sdacademy.simple.command.Command;
 import pl.sdacademy.simple.command.SelectCommand;
 import pl.sdacademy.simple.command.UnknownCommand;
+import pl.sdacademy.simple.repository.CarRepositoryImpl;
 import pl.sdacademy.simple.ui.MainMenu;
+import pl.sdacademy.simple.util.DatabaseUtil;
 
 public class SimpleApp {
 
@@ -35,4 +37,5 @@ public class SimpleApp {
 		Command command = COMMANDS_MAP.getOrDefault(selectedOption, UNKNOWN);
 		command.execute(scanner);
 	}
+
 }
