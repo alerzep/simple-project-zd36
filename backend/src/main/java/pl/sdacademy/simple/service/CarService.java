@@ -10,7 +10,7 @@ import javax.persistence.EntityTransaction;
 import java.util.List;
 
 public interface CarService {
-public void findAllcars();
-public void findCarsWithAttributes();
+ void findAllcars();
+ void findCarsWithAttributes();
 
 }

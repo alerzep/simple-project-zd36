@@ -6,5 +6,5 @@ import pl.sdacademy.simple.model.CarParameter;
 import java.util.List;
 
 public interface CarRepository {
-    public List<CarEntity> getCars();
+    List<CarEntity> getCars();
 }

@@ -21,6 +21,7 @@ public class CarEntity {
 	private String colour;
 	private BigDecimal price;
 	private Byte automatic;
+
 	@ManyToMany
 	@JoinTable(name = "car_to_attribute",
 			joinColumns = @JoinColumn(name = "car_id"),
@@ -82,4 +83,20 @@ public class CarEntity {
 	public void setAttributes(Set<CarAttributeEntity> attributes) {
 		this.attributes = attributes;
 	}
+
+	@Override
+	public String toString() {
+		return "CarEntity{" +
+				"id=" + id +
+				", producer='" + producer + '\'' +
+				", model='" + model + '\'' +
+				", colour='" + colour + '\'' +
+				", price=" + price +
+				", automatic=" + automatic +
+				", attributes=" + attributes +
+				'}';
+	}
+
+
+
 }
